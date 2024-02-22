@@ -90,3 +90,6 @@ python hell_ray_core.py
 # 1- 5
 python hello_ray_ai_libraries.py
 ```
+## With langchain
+
+<https://python.langchain.com/docs/integrations/providers/ray_serve>
