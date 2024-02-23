@@ -18,11 +18,14 @@ from typing import Dict
 import numpy as np
 import ray
 
+context = ray.init()
+print("dashboard", context.dashboard_url)
+
 print("#### 1 Ray Data ####")
 
 # Create datasets from on-disk files, Python objects, and cloud storage like S3.
 # ds = ray.data.read_csv("s3://anonymous@ray-example-data/iris.csv")
-# https://github.com/ray-project/air-sample-data/blob/main/iris.csv
+# 鸢(yuān)尾花 https://github.com/ray-project/air-sample-data/blob/main/iris.csv
 ds = ray.data.read_csv("local:///tmp/iris/original.csv")
 
 # Apply functions to transform data. Ray Data executes transformations in parallel.
